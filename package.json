@@ -16,6 +16,7 @@
     "./main": "./dist/main/index.js"
   },
   "scripts": {
+    "prepare": "npm run build",
     "clean": "rimraf dist",
     "build:package": "tsc && tsc-alias",
     "build:babel": "babel dist --out-dir dist --extensions \".js\"",
